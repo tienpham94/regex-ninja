@@ -1,10 +1,13 @@
 'use strict';
 
-var str = `http://egghead.io
-not a web address
-http://
-https://egghead.io more`;
-var regex = /https?:\/\/.+/g
+
+var str = `800-456-7890
+(555) 456-7890
+4564567890`;
+
+var regex = /\(?(\d{3})\)?[\s-]?\d{3}[\s-]?\d{4}/g;
+
+console.log(str.replace(regex, 'area code: $1'));
 
 /**
  * @param  String str
