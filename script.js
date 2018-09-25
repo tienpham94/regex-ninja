@@ -1,13 +1,11 @@
 'use strict';
 
+var str = `foo
+foobar
+foobaz
+fooboo`
 
-var str = `800-456-7890
-(555) 456-7890
-4564567890`;
-
-var regex = /\(?(\d{3})\)?[\s-]?\d{3}[\s-]?\d{4}/g;
-
-console.log(str.replace(regex, 'area code: $1'));
+var regex = /foo(?!bar|boo)/g
 
 /**
  * @param  String str
