@@ -1,11 +1,7 @@
 'use strict';
 
-var str = `foo
-foobar
-foobaz
-fooboo`
-
-var regex = /foo(?!bar|boo)/g
+var str = `This history is his, it is`;
+var regex = /\Bis\B/g
 
 /**
  * @param  String str
