@@ -1,10 +1,10 @@
 'use strict';
 
-var str = `12/1/16
+const str = `12/1/16
 12-16-13
 11/12/16
 12-12-2016`;
-var regex = /^12.+16$/gm;
+const regex = /^12.+16$/gm;
 
 // console.log(regex.exec(str))
 
